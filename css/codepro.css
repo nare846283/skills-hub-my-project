@@ -1,0 +1,726 @@
+
+
+
+/* this is show code edittor project section styling*/
+
+.code-edit-pro {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background: #282a35;
+    /* background-color: DodgerBlue; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+.code-edit-pro h1{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.code-edit-pro p{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+/* this is show code edittor project section container styling*/
+.codeeditorpro-container{
+    border-radius: 10px;
+    background: #f1f1f1;
+    width: 70%;
+    height: 60vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+/* this is show code edittor project section container search styling*/
+.codeeditorpro-search{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background: #f1f1f1;
+}
+
+/* this is show code edittor project section container search left styling*/
+.codeeditorpro-search-left{
+    /* background: #000; */
+    padding-top: 18px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: start;
+    width: 20%;
+    height: 100%;
+}
+
+.codeeditorpro-search-left span {
+    margin-left: 8px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+/* this is show code edittor project section container search middle styling*/
+.codeeditorpro-search-middle{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background: #f1f1f1;
+}
+
+
+.codeeditorpro-input{
+    padding: 3px;
+    font-size: 12px;
+    width: 100%;
+    height: fit-content;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* this is show code edittor project section container search right styling*/
+.codeeditorpro-search-right{
+    border-top-right-radius: 10px;
+    width: 20%;
+    height: 100%;
+    background: #f1f1f1;
+}
+
+/* this is show code edittor project section container Code Tab styling*/
+
+.codeeditorpro-codetab{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 40px;
+    background: #f1f1f1;
+}
+
+/* this is show code edittor project section container Code Tab styling*/
+.codeeditorpro-codetab button{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    width: 80px;
+    height: 100%;
+    margin-left: 0px;
+}
+
+.codeeditorpro-codetab button::after{
+    color: #c2c2c2;
+}
+
+/* this is show code edittor project section container Code Tab show project area styling*/
+.show-codeeditor-pro{
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+}
+
+.show-codeeditor-pro img{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+/* this is show code edittor project section container Code Tab show project click button styling*/
+
+.code-edit-pro a{
+    width: 70%;
+    text-decoration: none;   
+}
+
+.code-edit-pro a button{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width:fit-content;
+    padding: 15px 45px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 45px;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.w3schools-spaces{
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background: #282a35;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.w3schools-spaces h1{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.w3schools-spaces p{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+/* this is show code edittor project section container styling*/
+.w3schools-spaces-container{
+    background-size: cover;
+    /* border: 1px solid red; */
+    width: 65%;
+    height: 380px;
+}
+
+.w3schools-spaces-container img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.how-it-work{
+    background-size: cover;
+    width: 70%;
+    height: 320px;
+    
+}
+
+.how-it-work img{
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+}
+
+.w3schools-spaces a{
+    text-align: center;
+    width: 40%;
+    text-decoration: none;   
+}
+
+.w3schools-spaces a button{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width:fit-content;
+    padding: 15px 100px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pro-user-dec{
+    height: 70vh;
+    width: fit-content;
+    height: fit-content;
+}
+
+.pro-user-dec p{
+    display: flex;
+    align-items: center;
+    padding: 3px 20px;
+    text-align: start;
+}
+
+.pro-user-dec p img{
+    padding: 0px 15px;
+    
+}
+
+/* Color picker area styling  start*/
+.color-picker{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.color-picker h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+}
+
+.color-picker p{
+    line-height: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+}
+
+
+.color-picker a img{
+    margin-top: 30px;
+    width: 180px;
+    height: 150px;
+}
+
+/* Color picker area styling  end*/
+
+/* code game area styling  start*/
+
+.code-game{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.code-game h1{
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+}
+
+.code-game p{
+    line-height: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: black;
+    font-family: 'Rock Salt', cursive;
+    font-size: 23px;
+}
+
+.code-game a img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 200px;
+}
+
+.code-game a button{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width:fit-content;
+    padding: 15px 100px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.exce-quiz{
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.exce-quiz h1{
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+}
+
+.exce-quiz p{
+    line-height: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+}
+
+.exce-quiz-card {
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: auto;
+    display: flex;
+    justify-content:space-around;
+    gap: 30px;
+    flex-flow: row wrap;
+    /* background-color: DodgerBlue; */
+    background-color: #282A35;
+    
+  }
+  
+/* //////////--------- this is Tocard section container card area styling ----------///////////*/
+
+.exce-quiz-container-card {
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 44%;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+.exce-quiz-container-card a{
+    text-decoration: none;   
+}
+
+.exce-quiz-container-card a button{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width:100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;;
+    background: transparent;
+    color: #000000; 
+}
+
+.web-temp{
+    background-color: #E7E9EB!important;
+    color: black!important;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.web-temp .temp-img{
+    padding: 2px;
+    margin-top: 50px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.web-temp .temp-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.web-temp h1{
+    margin: 20px 0 30px 0 !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.web-temp p{
+    font-weight: 400;
+    line-height: 0.5px;
+    margin: 10px 10;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+}
+
+.brows-temp-btn{
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 70px;
+    background-color: #282A35;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.brows-temp-btn button:hover{
+    background-color: #000000;
+    
+    cursor: pointer;
+}
+
+.brows-temp-btn button{
+    overflow: hidden;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #282A35;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+    border-radius: 50px;
+    
+}
+
+
+.kickstart{
+    border-radius: 50px;
+    position: relative;
+    background-color: #000000;
+    color: #FFC0C7;
+    margin: 50px auto;
+    width: 96%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.kickstart h2{
+    margin: 20px 20px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.kickstart p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 52px;
+    margin: 20px 20px !important;
+    font-weight: 700;
+    
+}
+
+.kickstart a{
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 70px 20px !important;
+    width: 200px;
+    height: 70px;
+    background-color: #04AA6D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kickstart a button:hover{
+    background-color: #267e5d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.kickstart a button{
+    border: none;
+    background-color: #04AA6D;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.kickstart .svg-img{
+    left: 60%;
+    width: 500px;
+    height: 500px;
+    z-index: 3;
+    position: absolute;
+}
+
+.kickstart .svg-img .line-svg{
+    transform: rotate(5deg);
+    top: 58%;
+    width: 220px;
+    height: 220px;
+    left: 25%;
+    z-index: 99;
+    position: absolute;
+}
+
+.kickstart .svg-img .cercle-svg{
+    top: 70%;
+    left: 55%;
+    width: 230px;
+    height: 230px;
+    z-index: 9;
+    position: absolute;
+}
+
+.kickstart .svg-img svg{
+    
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 9;
+    position: absolute;
+}
+
+.how-to{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 96%;
+    margin: auto;
+    height: auto;
+    border-radius: 50px;
+    padding-bottom: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.how-to h2{
+    margin-top: 70px;
+    font-size: 52px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.how-to h4{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.how-to h6{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.how-to .codeeditorpro-container{
+    width: 70%;
+    height: 75vh;
+    background-color: #e3e6e8;
+}
+
+.how-to .stand-hand{
+    width: 50px;
+    height: 100px;
+    background-color: #282A35;
+}
+
+.how-to a{
+    border-radius: 50px;
+    margin-top: 0;
+    text-decoration: none;
+    width: 35%;
+    height: 60px;
+    background-color: #282A35;
+}
+
+.how-to a button{
+    color: #fffffff8;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #282A35;
+}
+
+.how-to a button:hover{
+    background-color: #04AA6D;
+    cursor: pointer;
+}
+/* this is show code edittor project section container responsiv styling*/
+
+@media (max-width: 520px) {
+
+    .code-edit-pro p{
+        text-align: center;
+        width: 90%;
+    }
+    
+    /* this is show code edittor project section container styling*/
+    .codeeditorpro-container{
+        width: 94%;
+        height: 20vh;
+        margin-bottom: 60px;
+    }
+    
+    /* this is show code edittor project section container search left styling*/
+    .codeeditorpro-search-left{
+        width: 40%;
+        padding-top: 12px;
+        padding-left: 2px;
+    }
+    
+    .codeeditorpro-search-left span {
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+    }
+        
+    
+/* this is show code edittor project section container Code Tab show project area styling*/
+    .show-codeeditor-pro{
+        width: 100%;
+        height: fit-content;
+        background-size: cover;
+    }
+
+    .show-codeeditor-pro img{
+        width: 100%;
+        height: 100%;
+    }
+
+/* this is show code edittor project section container Code Tab show project click button styling*/
+
+    
+    .code-edit-pro a{
+        margin-top: 0px;
+        width: 94%;
+    }
+    
+    .code-edit-pro a button{
+        width: 100%;
+        padding: 12px 0px;
+        font-weight: 500;
+        font-size: 16px;
+        
+    }
+    
+
+}

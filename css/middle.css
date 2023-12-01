@@ -1,0 +1,87 @@
+
+/* //////////--------- this is middle section area styling ----------///////////*/
+
+.middle {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+    flex-flow: row wrap;
+    /* background-color: DodgerBlue; */
+    background-color: #282A35;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+/* //////////--------- this is middle section container card area styling ----------///////////*/
+
+.middle-container-card {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    width: 44%;
+    height: 275px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+.middle-container-card h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.middle-container-card p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.middle-container-card a{
+    text-decoration: none;   
+}
+
+
+
+
+@media (max-width: 520px) {
+    
+
+/* //////////--------- this is middle section area styling ----------///////////*/
+
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        gap: 10px;
+        flex-flow: column wrap;
+       
+    }
+    
+    /* //////////--------- this is middle section container card area styling ----------///////////*/
+
+    .middle-container-card {
+        
+        margin-top: 3px;
+        margin-bottom: 0px;
+        width: 94%;
+
+    }
+
+
+
+}

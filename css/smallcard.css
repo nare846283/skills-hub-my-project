@@ -1,0 +1,79 @@
+
+/* //////////--------- this is Small Card section area styling ----------///////////*/
+
+.smallCard {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 96%;
+    margin: 50px auto;
+    border-radius: 50px;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    flex-flow: row wrap;
+    /* background-color: DodgerBlue; */
+    background-color: #282A35;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+ 
+/* //////////--------- this is small section container card area styling ----------///////////*/
+  
+.smallCard-container-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 19%;
+    height: 130px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+.smallCard-container-card a{
+    text-decoration: none;   
+}
+
+.smallCard-container-card a button{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width:100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;;
+    background: transparent;
+    color: #000000; 
+}
+
+/* //////////--------- this is small section container card Media Query area styling  start----------///////////*/
+@media (max-width: 520px) {
+  
+  .smallCard {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    flex-flow: column wrap;
+  }
+
+  
+  .smallCard-container-card {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    width: 94%;
+
+  }
+}
+
+
+/* //////////--------- this is small section container card Media Query area styling  end----------///////////*/

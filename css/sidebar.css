@@ -1,0 +1,120 @@
+@media (min-width: 993px) {
+    .w3-sidebar.w3-collapse {
+        display: block!important;
+    }  
+}
+
+.w3-sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#leftmenuinner {
+    padding-top: 120px;
+}
+
+#leftmenuinner {
+    position: fixed;
+    top: 0;
+    padding-bottom: 0px;
+    height: 100%;
+    width: 300px;
+    background-color: transparent;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+
+#leftmenuinnerinner {
+    height: 100%;
+    width: 100%;
+    background: #fff7af;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#leftmenuinnerinner::-webkit-scrollbar {
+   width: 10px;
+}
+
+
+
+#sidenav h2 {
+    font-size: 21px;
+    padding: 6px 0px;
+    text-align: center;
+    margin: auto;
+    border-radius: 6px;
+    width: 90%;
+    background-color: rgb(255, 3, 3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: rgb(255, 255, 255);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    /* margin: 10px 0; */
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+#sidenav a.active {
+    background-color: #04AA6D!important;
+    color: #ffffff!important;
+}
+
+#sidenav a {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+    color: #133b0b;
+    font-size: 14px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    transform: scale(1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#sidenav a:hover {
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-decoration: none;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgb(255, 103, 230);
+    color: #ffffff;
+    transition: all 1s cubic-bezier(.25,.8,.25,1);
+    transform: scale(1.1);
+}
+
+a:-webkit-any-link {
+    /* color: -webkit-link; */
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.ref_overview, .tut_overview {
+    display: none;
+    margin-left: 10px;
+    background-color: #ddd;
+    line-height: 1.8em;
+}

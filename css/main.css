@@ -1,0 +1,649 @@
+/* //////////--------- this is main section area styling ----------///////////*/
+
+.main{
+    border-radius: 50px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 96%;
+    height: 90vh;
+    overflow-x: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* //////////--------- this is main section left area styling ----------///////////*/
+
+.main-container-left{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 80%;
+    
+}
+
+.main-container-left h1{
+    /* border: 1px solid green; */
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.main-container-left p{
+    /* border: 1px solid green; */
+    font-weight: 700;
+    color: #000;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+.main-container-left a{
+    /* border: 1px solid green; */
+    z-index: 99;
+    background: #00000000;
+    line-height: 1.5;
+    margin-top: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 20px;
+    width:100%;
+    height: 40px;    
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    
+
+}
+
+.main-container-left a button{
+    /* border: 1px solid green; */
+    line-height: 1.5;
+    font-size: 18px;
+    width:  200px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    transform: scale(1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.main-container-left a button{
+    /* border: 1px solid green; */
+    line-height: 1.5;
+    font-size: 18px;
+    width:  200px;
+    height: 40px;
+    border-radius: 25px;
+    
+    transform: scale(1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#certificate{
+    border: none;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #ffa600;
+    border-radius: 20px;
+    margin:auto;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#certificate:hover{
+    cursor: pointer;
+    color: #ffffff;
+    transition: all ease-in-out 1s;
+}
+
+#certificate::before{
+    transform: scale(1);
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: #0026ff;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in-out .8s;
+}
+
+#certificate:hover::before{
+    opacity: 1;
+    transform: scale(20);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+}
+
+#learn-html{
+    width: 180px;
+    height: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #04aa6d; 
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin:auto;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#learn-html:hover{
+    cursor: pointer;
+    color: #ffffff;
+    transition: all ease-in-out 1s;
+}
+
+#learn-html::before{
+    transform: scale(1);
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: #0026ff;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in-out .8s;
+}
+
+#learn-html:hover::before{
+    opacity: 1;
+    transform: scale(20);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+}
+
+
+#refrence{
+    width: 190px;
+    height: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #000000; 
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin:auto;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#refrence:hover{
+    cursor: pointer;
+    color: #ffffff;
+    transition: all ease-in-out 1s;
+}
+
+#refrence::before{
+    transform: scale(1);
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: #0026ff;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in-out .8s;
+}
+
+#refrence:hover::before{
+    opacity: 1;
+    transform: scale(20);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+}
+
+
+#video-tutorial{
+    width: 180px;
+    height: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #fff4a3; 
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin:auto;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#video-tutorial:hover{
+    cursor: pointer;
+    color: #ffffff;
+    transition: all ease-in-out 1s;
+}
+
+#video-tutorial::before{
+    transform: scale(1);
+    width: 10px;
+    height: 10px;
+    content: "";
+    background: #0026ff;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in-out .8s;
+}
+
+#video-tutorial:hover::before{
+    opacity: 1;
+    transform: scale(20);
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+}
+
+
+/* //////////--------- this is main section right area styling ----------///////////*/
+
+.main-container-right{
+    /* border: 1px solid green; */
+    border-radius: 20px;
+    background: #c9f9ff;
+    margin-left: 2%;
+    padding-top: 20px;
+    width: 30%;
+    height: 79%;
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 
+                0 2px 10px 0 rgba(0,0,0,0.12);  */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* //////////--------- this is main section right top area styling ----------///////////*/
+.main-container-right h1{
+    margin: 0px auto;
+    width: 90%;
+    height: fit-content;
+    /* padding-left: 4%;
+    padding-top: 35px; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    
+}
+
+/* //////////--------- this is main section right code area styling ----------///////////*/
+
+.main-container-right-codeAria{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 90%;
+    height: 64%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* //////////--------- this is main section right code left area styling ----------///////////*/
+
+.codeAria-left{
+    width: 1%;
+    height: 98%;
+    background: #04AA6D;
+    border-radius: 20px;
+    z-index: 9;
+}
+
+/* //////////--------- this is main section right code right area styling ----------///////////*/
+
+.codeAria-right{
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: #ebeeff;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.codeAria-right pre code{
+    font-size: 14px;
+    background: #ebeeff;
+}
+/* //////////--------- this is main section right bottom area styling ----------///////////*/
+
+.main-container-right a{
+    width: 180px;
+    height: 40px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #001488;
+    background: #f2ff38;
+    border-radius: 20px;
+    margin-left: 5%;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.main-container-right #html-example::before{
+    width: 180px;
+    height: 40px;
+    content: "HTML Example";
+    color: #ffffff;
+    background: #ff0000;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    left: -100%;
+}
+
+.main-container-right #html-example:hover::before{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+    left: 0%;
+}
+
+.main-container-right #css-example::before{
+    width: 180px;
+    height: 40px;
+    content: "CSS Example";
+    color: #ffffff;
+    background: #ff0000;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    left: -100%; 
+}
+
+.main-container-right #css-example:hover::before{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+    left: 0%;
+}
+
+.main-container-right #js-example::before{
+    width: 180px;
+    height: 40px;
+    content: "JavaScript Example";
+    color: #ffffff;
+    background: #ff0000;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    left: -100%;
+}
+
+.main-container-right #js-example:hover::before{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+    left: 0%;
+}
+
+
+.main-container-right #python-example::before{
+    width: 180px;
+    height: 40px;
+    content: "Python Example";
+    color: #ffffff;
+    background: #ff0000;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    left: -100%;    
+}
+
+.main-container-right #python-example:hover::before{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+    left: 0%;
+}
+
+.main-container-right #sql-example::before{
+    width: 180px;
+    height: 40px;
+    content: "SQL Example";
+    color: #ffffff;
+    background: #ff0000;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    left: -100%;    
+}
+
+.main-container-right #sql-example:hover::before{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+    left: 0%;
+}
+
+@media (max-width: 520px) {
+    
+    /* //////////--------- this is main section area styling ----------///////////*/
+
+.main{
+    flex-direction: column;
+    height: auto;
+}
+
+/* //////////--------- this is main section left area styling ----------///////////*/
+
+.main-container-left{
+    margin-top: 15px;
+    width: 100%;
+    height: 70vh;
+    
+}
+
+.main-container-left h1{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.main-container-left p{
+    /* border: 1px solid green; */
+    font-weight: 700;
+    color: #000;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+.main-container-left a{
+    /* border: 1px solid green; */
+    z-index: 99;
+    background: #00000000;
+    line-height: 1.5;
+    margin-top: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 20px;
+    width:100%;
+    height: 40px;    
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.main-container-left a button{
+    /* border: 1px solid green; */
+    line-height: 1.5;
+    font-size: 18px;
+    width:200px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+}
+
+/* //////////--------- this is main section right area styling ----------///////////*/
+
+.main-container-right{
+    width: 90%;
+    height: 70vh;
+    margin-bottom: 20px;
+
+}
+
+/* //////////--------- this is main section right top area styling ----------///////////*/
+.main-container-right h1{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #E7E9EB;
+    width: 96%;
+    height: 14%;
+    padding-left: 4%;
+    padding-top: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+}
+
+/* //////////--------- this is main section right code area styling ----------///////////*/
+
+.main-container-right-codeAria{
+    margin-top: 20px;
+    /* background: #ce4f14; */
+    background: #E7E9EB;
+    display: flex;
+    width: 100%;
+    height: 64%;
+}
+
+/* //////////--------- this is main section right code left area styling ----------///////////*/
+
+.codeAria-left{
+    margin-left: 4.5%;
+    width: 1%;
+    height: 100%;
+    background: #04AA6D;
+}
+
+/* //////////--------- this is main section right code right area styling ----------///////////*/
+
+.codeAria-right{
+    float: left;
+    width: 90%;
+    height: 100%;
+    background: #ffffff;
+}
+
+/* //////////--------- this is main section right bottom area styling ----------///////////*/
+
+.main-container-right a{
+    margin-bottom: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 16%;
+    background: #E7E9EB;
+}
+
+.main-container-right a button{
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px 0px;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background: #04AA6D;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    
+}
+
+
+
+
+}

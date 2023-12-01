@@ -1,0 +1,259 @@
+.cards-wrapper {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55vh;
+  gap: 20px;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-family: 'Heebo';
+  background-color: #fff;
+  width: 27%;
+  height: 100%;
+  font-size: .5em;
+  color: white;
+  border-radius: 2em;
+  /* padding: 1.1em; */
+  overflow: hidden;
+
+}
+
+.card .image-area{
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card img{
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card img:hover{
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all ease-in .5s;
+}
+
+
+
+.card .content-area{
+  padding-top: 10px;
+  gap: 10px;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.card h3{
+  display: flex;
+  align-items: center;
+  color: #bb00b2;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card h5{
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card .card-ft{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid #838181b2;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card .card-ft .ft-left{
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.card .card-ft .ft-left a{
+  text-decoration: none;
+}
+
+.card .card-ft .ft-left a h4{
+  color: #019688;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.card .card-ft .ft-left a h4:hover{
+  color: #3dc200;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.card .card-ft .ft-right{
+  gap: 20px;
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.card .card-ft .ft-right i{
+  color: #019688;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transform: scale(1);
+}
+
+.card .card-ft .ft-right i:hover{
+  transform: scale(2);
+  transition: all ease-in-out .5s;
+  cursor: pointer;
+  color: #ff2121;
+}
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+a {
+  color: inherit;
+}
+
+
+
+.card-grid-space{
+    background-color: red;
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+} */

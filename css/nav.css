@@ -1,0 +1,300 @@
+/* this is main Menu (top) */
+
+.main-menu{
+    font-family: 'Source Sans Pro', sans-serif;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #f4f9ff;
+    /* background-color: #a3c3ff; */
+    /* background-color: rgb(123, 255, 90); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* this is main left Menu styling (top)*/
+
+.left-menu{
+    /* border: 1px solid red; */
+    height: 55px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+/* this is main left Menu logo styling (top)*/
+
+.logo{
+    /* border: 1px solid red; */
+    /* padding: 30px 25px; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+   
+}
+
+.logo a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.logo a h1{
+    color: #050052;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.logo a h6{
+    font-size: 14px;
+}
+
+/* .logo img{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 38px;
+} */
+
+/* this is main left Menu item styling (top) */
+.left-menu a{
+    text-decoration: none;
+    
+}
+
+.show-hide-menu {
+    /* border: 1px solid red; */
+    opacity: 0;
+    display: none;
+    width: fit-content;
+    height: 100%;
+   
+}
+
+.show-hide-menu a{
+    width: fit-content;
+    height: 100%;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+}
+
+.show-hide-menu a h3{
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.show-hide-menu a img{
+    /* opacity: 0;
+    display: none; */
+    margin-top: 1px;
+    margin-left: 5px;
+    width: 8px;
+    height: 8px;
+    color: #ffffff;
+}
+
+
+.left-menu-item{
+    
+    cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    
+}
+
+.left-menu-item a{
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.2;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    color: #000000;
+    background: #8bff2c;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 8px 20px;
+    transform: scale(1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.left-menu-item a:hover{
+    color: #ffffff;
+    background: rgb(255, 0, 221);
+    transform: scale(1.2);
+    transition: all ease 1s;
+}
+
+.left-menu-item i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this is main right Menu styling (top) */
+
+.right-menu{
+    padding-right: 20px;
+    height: 55px;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+}
+
+/* this is main right Menu button styling (top) */
+
+.right-menu a{
+    z-index: 99;
+    display: flex;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* color: #ffffff;
+    background: #ffa600; */
+    color: #ffffff;
+    background: #ff3c00;
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* this is main right Menu button hover styling (top) */
+
+
+.right-menu a:hover{
+    color: #65007e;
+    background: #2cffb2;
+    transition: all 1s cubic-bezier(.25,.8,.25,1);
+    transform: scale(1.2);
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+@media (max-width:520px) {
+    .main-menu{
+        height: 60px;
+       
+    }
+    
+    /* this is main left Menu logo styling (top)*/
+    
+    .logo{
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 40%;
+    }
+    
+    .logo img{
+        width: 45px;
+        height: 40px;
+    }
+
+    .left-menu{
+        /* border: 1px solid red; */
+        height: 60px;
+    }
+
+    .show-hide-menu {
+        height: 50px;
+        width: 10%;
+        opacity: 1;
+        display: block;       
+    }
+
+        
+    .show-hide-menu a{
+        padding-left: 10px;
+        padding-right: 0px;
+
+    }
+
+    .show-hide-menu a h3{
+        font-size: 18px;
+    }
+
+    .left-menu-item{
+        opacity: 0;
+        display: none;
+    }
+    
+    /* this is main right Menu button styling (top) */
+    .right-menu{
+        justify-content: center;
+        height: 60px;
+        padding-right: 0px;
+        
+    }
+
+    .Bootcamps-btn{
+        opacity: 0;
+        display: none;
+    }
+
+    .spaces-btn{
+        
+        opacity: 0;
+        display: none;
+    }
+
+    .sighnup-btn{
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+    }
+
+    .login-btn{
+        padding-left: 40px;
+        padding-right: 20px;
+        height: 40px;
+    }
+
+    .seccond-menu{
+        opacity: 0;
+        display: none;  
+    }
+    
+
+
+}
