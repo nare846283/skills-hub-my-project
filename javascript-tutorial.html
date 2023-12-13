@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="css/blogs.css">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/code_area.css">
+  <link rel="stylesheet" href="css/text-container.css" />
   <title>W3School Pro: Home Page</title>
 </head>
 
@@ -214,352 +215,334 @@
               <!-- Blogs Text title area  end -->
 
               <!-- Blogs Text description area  start -->
-              <div class="text-container ">
-                <div class="text-heading">
-                  <h2>What is JavaScript</h2>
-                  <i id="textIcon" class="ri-arrow-down-circle-fill"></i>
+              <div class="text-container" id="answer1" onclick="toggleAnswer('answer1', 'icon1')">
+                <div class="question">
+                  <h3>What is JavaScript</h3>
+                  <div class="icon" id="icon1">
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
                 </div>
-                <div class="text-desc">
-                  <p>
-                    JavaScript ek programming language hai jo primarily web development ke liye banayi gayi hai.
-                    Iska upayog aksar web browsers mein client-side scripting ke roop mein hota hai,
-                    jisse websites ko dynamic aur interactive banaya ja sakta hai.
-                    Yeh HTML aur CSS ke saath milke web pages ko zyada vibrant aur user-friendly banaane mein madad karta
-                    hai.
-                  </p>
-  
-                  <ol>
-                    <li>
-                      <h3>1. Client-Side Scripting :-</h3>
-                      JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
-                      Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
-                      jisse webpage ko dynamically modify kiya ja sake.
-                    </li>
-                    <li>
-                      <h3>2. Cross-Platform Compatibility :-</h3>
-                      JavaScript sabhi major web browsers mein kaam karta hai, jisse yeh ek cross-platform language hai.
-                      Iska matlab hai ki likha gaya code alag-alag browsers aur operating systems par bina kisi samasya ke
-                      kaam karega.
-                    </li>
-                    <li>
-                      <h3>3. Object-Oriented :-</h3>
-                      JavaScript object-oriented programming (OOP) ka support karta hai, jiske karan code ko modular
-                      banaya ja sakta hai. Isme objects ka istemaal kiya ja sakta hai jo data aur functionality ko ek
-                      saath laaye.
-                    </li>
-                    <li>
-                      <h3>4. Asynchronous Programming :-</h3>
-                      JavaScript asynchronous programming ko bhi support karta hai, jo kisi task ko chhod kar dusre tasks
-                      ko continue karne mein madad karta hai. Iske liye callbacks, promises, aur async/await ka istemaal
-                      hota hai.
-                    </li>
-                    <li>
-                      <h3>5. Dynamic Typing :-</h3>
-                      JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
-                      Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
-                      jisse webpage ko dynamically modify kiya ja sake.
-                    </li>
-                    <li>
-                      <h3>6. Event-Driven Programming :-</h3>
-                      JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
-                      Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
-                      jisse webpage ko dynamically modify kiya ja sake.
-                    </li>
-                    <li>
-                      <h2>Basic JavaScript Syntax</h2>
-                      <div class="code-area">
-                        <div class="heading">
-                          <h5>Document Syntax Example</h5>
-                          <button id="copyJsSyntax" class="copy-button"><i class="ri-clipboard-line"></i> Copy
-                            Code</button>
+                <div class="answer-container">
+                  <div class="answer">
+                    <p>
+                      JavaScript ek programming language hai jo primarily web development ke liye banayi gayi hai.
+                      Iska upayog aksar web browsers mein client-side scripting ke roop mein hota hai,
+                      jisse websites ko dynamic aur interactive banaya ja sakta hai.
+                      Yeh HTML aur CSS ke saath milke web pages ko zyada vibrant aur user-friendly banaane mein madad
+                      karta
+                      hai.
+                    </p>
+
+                    <ol>
+                      <li>
+                        <h3>1. Client-Side Scripting :-</h3>
+                        JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
+                        Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
+                        jisse webpage ko dynamically modify kiya ja sake.
+                      </li>
+                      <li>
+                        <h3>2. Cross-Platform Compatibility :-</h3>
+                        JavaScript sabhi major web browsers mein kaam karta hai, jisse yeh ek cross-platform language
+                        hai.
+                        Iska matlab hai ki likha gaya code alag-alag browsers aur operating systems par bina kisi
+                        samasya ke
+                        kaam karega.
+                      </li>
+                      <li>
+                        <h3>3. Object-Oriented :-</h3>
+                        JavaScript object-oriented programming (OOP) ka support karta hai, jiske karan code ko modular
+                        banaya ja sakta hai. Isme objects ka istemaal kiya ja sakta hai jo data aur functionality ko ek
+                        saath laaye.
+                      </li>
+                      <li>
+                        <h3>4. Asynchronous Programming :-</h3>
+                        JavaScript asynchronous programming ko bhi support karta hai, jo kisi task ko chhod kar dusre
+                        tasks
+                        ko continue karne mein madad karta hai. Iske liye callbacks, promises, aur async/await ka
+                        istemaal
+                        hota hai.
+                      </li>
+                      <li>
+                        <h3>5. Dynamic Typing :-</h3>
+                        JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
+                        Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
+                        jisse webpage ko dynamically modify kiya ja sake.
+                      </li>
+                      <li>
+                        <h3>6. Event-Driven Programming :-</h3>
+                        JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
+                        Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
+                        jisse webpage ko dynamically modify kiya ja sake.
+                      </li>
+                      <li>
+                        <h2>Basic JavaScript Syntax</h2>
+                        <div class="code-area">
+                          <div class="heading">
+                            <h5>Document Syntax Example</h5>
+                            <button id="copyJsSyntax" class="copy-button"><i class="ri-clipboard-line"></i> Copy
+                              Code</button>
+                          </div>
+                          <div id="jsSyntax" class="CodeMirror"></div>
                         </div>
-                        <div id="jsSyntax" class="CodeMirror"></div>
-                      </div>
-                    </li>
-  
-                  </ol>
+                      </li>
 
-                  <p>
-                    Yeh sirf ek chhota introduction hai, aur JavaScript mein aur bhi advanced concepts hote hain jaise
-                    closures, prototypes, aur modern features jo ECMAScript standards ke saath aaye hain. JavaScript ka
-                    istemaal web development ke alawa bhi kai aur jagahon par hota hai, jisse yeh ek versatile aur
-                    prabhaavit programming language banata hai.
-                  </p>
-                </div>
-            
-              </div>
-              <!-- Blogs Text description area  end -->
+                    </ol>
 
-              <div class="text-container ">
-                <div class="text-heading">
-                  <h2>What is JavaScript</h2>
-                  <i id="textIcon" class="ri-arrow-down-circle-fill"></i>
+                    <p>
+                      Yeh sirf ek chhota introduction hai, aur JavaScript mein aur bhi advanced concepts hote hain jaise
+                      closures, prototypes, aur modern features jo ECMAScript standards ke saath aaye hain. JavaScript
+                      ka
+                      istemaal web development ke alawa bhi kai aur jagahon par hota hai, jisse yeh ek versatile aur
+                      prabhaavit programming language banata hai.
+                    </p>
+                  </div>
                 </div>
-                <div class="text-desc">
-                  <p>
-                    JavaScript ek programming language hai jo primarily web development ke liye banayi gayi hai.
-                    Iska upayog aksar web browsers mein client-side scripting ke roop mein hota hai,
-                    jisse websites ko dynamic aur interactive banaya ja sakta hai.
-                    Yeh HTML aur CSS ke saath milke web pages ko zyada vibrant aur user-friendly banaane mein madad karta
-                    hai.
-                  </p>
-  
-                  <ol>
-                    <li>
-                      <h3>1. Client-Side Scripting :-</h3>
-                      JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
-                      Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
-                      jisse webpage ko dynamically modify kiya ja sake.
-                    </li>
-                    <li>
-                      <h3>2. Cross-Platform Compatibility :-</h3>
-                      JavaScript sabhi major web browsers mein kaam karta hai, jisse yeh ek cross-platform language hai.
-                      Iska matlab hai ki likha gaya code alag-alag browsers aur operating systems par bina kisi samasya ke
-                      kaam karega.
-                    </li>
-                    <li>
-                      <h3>3. Object-Oriented :-</h3>
-                      JavaScript object-oriented programming (OOP) ka support karta hai, jiske karan code ko modular
-                      banaya ja sakta hai. Isme objects ka istemaal kiya ja sakta hai jo data aur functionality ko ek
-                      saath laaye.
-                    </li>
-                    <li>
-                      <h3>4. Asynchronous Programming :-</h3>
-                      JavaScript asynchronous programming ko bhi support karta hai, jo kisi task ko chhod kar dusre tasks
-                      ko continue karne mein madad karta hai. Iske liye callbacks, promises, aur async/await ka istemaal
-                      hota hai.
-                    </li>
-                    <li>
-                      <h3>5. Dynamic Typing :-</h3>
-                      JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
-                      Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
-                      jisse webpage ko dynamically modify kiya ja sake.
-                    </li>
-                    <li>
-                      <h3>6. Event-Driven Programming :-</h3>
-                      JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
-                      Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
-                      jisse webpage ko dynamically modify kiya ja sake.
-                    </li>
-                    <li>
-                      <h2>Basic JavaScript Syntax</h2>
-                      <div class="code-area">
-                        <div class="heading">
-                          <h5>Document Syntax Example</h5>
-                          <button id="copyJsSyntax" class="copy-button"><i class="ri-clipboard-line"></i> Copy
-                            Code</button>
-                        </div>
-                        <div id="jsSyntax" class="CodeMirror"></div>
-                      </div>
-                    </li>
-  
-                  </ol>
-
-                  <p>
-                    Yeh sirf ek chhota introduction hai, aur JavaScript mein aur bhi advanced concepts hote hain jaise
-                    closures, prototypes, aur modern features jo ECMAScript standards ke saath aaye hain. JavaScript ka
-                    istemaal web development ke alawa bhi kai aur jagahon par hota hai, jisse yeh ek versatile aur
-                    prabhaavit programming language banata hai.
-                  </p>
-                </div>
-            
-              </div>
-              <!-- Blogs Text HTML History area start -->
-              <div class="history">
-                <h2>JavaScript History</h2>
-                <p>
-                  JavaScript ka itihas bahut hi mahatvapurna hai aur iska vikas web development mein ek turning point
-                  tha. Yahan, JavaScript ke itihas ki kuch mukhya ghatnayein hain:
-                </p>
-                <ul>
-                  <li>
-                    <h5>1995</h5>
-                    <p>
-                      <span class="h-author1">Netscape Navigator :-</span>
-                      JavaScript ka janm 1995 mein hua tha, jab Netscape Navigator browser ke liye ek naya scripting
-                      language talaash raha tha. Brendan Eich ne is bhasha ka vikas kiya, aur isse Mocha ke naam se jana
-                      jaata tha.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>1995</h5>
-                    <p>
-                      <span class="h-author">LiveScript se JavaScript :-</span>
-                      Jab Netscape ne is bhasha ko apne browser mein shamil kiya, to usne iska naam "LiveScript" rakha.
-                      Fir, Sun Microsystems ke saath ek alliance ke chalte, iska naam "JavaScript" mein badal diya gaya.
-                      Isme Java se kuch inspiration thi, lekin yeh Java se koi bhi direct connection nahi rakhta hai.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>1996</h5>
-                    <p>
-                      <span class="h-author1">ECMAScript Standardization :-</span>
-                      JavaScript ke popularity ke saath-saath, iska standardization ka demand badha. Iske liye European
-                      Computer Manufacturers Association (ECMA) ne ek committee banaayi, jiska uddeshya JavaScript ko ek
-                      standardized scripting language banane ka tha. Is standardization process ke baad, is bhasha ko
-                      "ECMAScript" kaha gaya.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>1997</h5>
-                    <p>
-                      <span class="h-author">ECMAScript 2nd Edition :-</span>
-                      Pahli official ECMAScript standard, ECMAScript 1, release hui thi 1997 mein. Jald hi iske baad,
-                      ECMAScript 2nd Edition aayi, jise ECMA-262 standard ke roop mein jaana jaata hai.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>2000</h5>
-                    <p>
-                      <span class="h-author1">ECMAScript 3rd Edition :-</span>
-                      1999 mein, ECMAScript 3rd Edition release hui, jisme kuch naye features shaamil kiye gaye. Yeh
-                      version kaafi lamba samay tak istemaal hua aur aaj bhi kuch jagahon par legacy code ke roop mein
-                      dekha ja sakta hai.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>2005</h5>
-                    <p>
-                      <span class="h-author">AJAX :-</span>
-                      2005 mein, Jesse James Garrett ne AJAX (Asynchronous JavaScript and XML) term coin kiya. AJAX ka
-                      istemaal karke web pages ko bina puri tarah reload kiye, dynamic taur par update kiya ja sakta
-                      tha. Yeh ek important milestone tha JavaScript ke evolution mein.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>2009</h5>
-                    <p>
-                      <span class="h-author1">ECMAScript 5th Edition :-</span>
-                      ECMAScript 5th Edition 2009 mein release hui aur ismein modern JavaScript development ke liye kai
-                      improvements shaamil the.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>2015</h5>
-                    <p>
-                      <span class="h-author">ECMAScript 6 (ES6) ya ECMAScript 2015 :-</span>
-                      Is version ne JavaScript ko kai naye features aur enhancements diye, jaise ki arrow functions,
-                      classes, let aur const keywords, template literals, aur modules. Is version ke baad, har saal naye
-                      ECMAScript versions aane lage.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>2020</h5>
-                    <p>
-                      <span class="h-author1">ECMAScript 2020 (ES11) :-</span>
-                      Har saal ki tarah, ECMAScript ke naye version aaye hain, jinmein JavaScript ko aur bhi powerful
-                      banane wale features shaamil hote hain.
-                    </p>
-                  </li>
-                </ul>
-                <p>
-                  JavaScript ka itihas aaj bhi tezi se badal raha hai, aur ise continuously update kiya ja raha hai taki
-                  yeh developers ko latest tools aur capabilities provide kar sake. Iske istemaal ke karan, JavaScript
-                  web development ka ek moolya aur pramukh bhasha ban gaya hai.
-                </p>
               </div>
 
-              <div class="text-container">
-                <h3>1. Text Editors/IDEs :-</h3>
-                <ul>
-                  <li>
-                    <span>Visual Studio Code (VSCode)</span> :- <br>
-                    Yeh ek mukt, lightweight, aur highly customizable source code editor hai jo bahut saare programming
-                    languages, including JavaScript, ke liye upayukt hai.
-                  </li>
-                  <li>
-                    <span>Sublime Text</span> :- <br>
-                    Ek aur popular text editor hai jo syntax highlighting, auto-completion, aur versatile plugins ke
-                    liye prasiddh hai.
-                  </li>
-                  <li>
-                    <span>Atom</span> :- <br>
-                    GitHub ne develop kiya hai aur yeh bhi ek mukt aur customizable text editor hai.
-                  </li>
-                </ul>
-                <h3>2. Version Control Systems :-</h3>
-                <ul>
-                  <li>
-                    <span>Git</span> :- <br>
-                    Version control ke liye Git ka widespread istemaal hota hai. Developers apne code ko track karne aur collaboration ke liye Git ka upayog karte hain.
-                  </li>
-                  
-                </ul>
-                <h3>3. Package Managers :-</h3>
-                <ul>
-                  <li>
-                    <span>npm (Node Package Manager)</span> :- <br>
-                    JavaScript packages ko manage karne ke liye npm ka istemaal hota hai. Ye Node.js ke saath pre-installed aata hai aur open source packages ko download aur install karne mein madad karta hai.
-                  </li>
-                  <li>
-                    <span>Yarn</span> :- <br>
-                    Yeh bhi ek package manager hai jo npm ke alternatives mein se ek hai. Yarn npm ki tarah hi kaam karta hai, lekin kuch advanced features aur speed optimizations ke saath aata hai.
-                  </li>
-                  
-                </ul>
-                <h3>4. Build Tools :-</h3>
-                <ul>
-                  <li>
-                    <span>Webpack</span> :- <br>
-                    Ye ek module bundler hai jo multiple JavaScript files ko ek hi file mein combine karta hai, jisse performance improve hoti hai.
-                  </li>
-                  <li>
-                    <span>Babel</span> :- <br>
-                    Modern JavaScript (ES6, ES7, etc.) ko older versions mein convert karne ke liye Babel ka istemaal hota hai, taki code sabhi browsers mein chal sake.
-                  </li>
-                  
-                </ul>
-                <h3>5. Task Runners :-</h3>
-                <ul>
-                  <li>
-                    <span>Grunt</span> :- <br>
-                    Yeh ek JavaScript task runner hai jo repetitive tasks ko automate karne mein madad karta hai.
-                  </li>
-                  <li>
-                    <span>Gulp</span> :- <br>
-                    Gulp bhi ek task runner hai jo code ko optimize karne aur build process ko streamline karne mein upayukt hai.
-                  </li>
-                 
-                </ul>
-                <h3>6. Testing Frameworks :-</h3>
-                <ul>
-                  <li>
-                    <span>Jasmine</span> :- <br>
-                    Yeh ek behavior-driven development framework hai jiska istemaal testing ke liye hota hai.
-                  </li>
-                  <li>
-                    <span>Mocha</span> :- <br>
-                    Mocha ek flexible aur feature-rich testing framework hai jo asynchrony ko support karta hai.
+              <div class="text-container" id="answer2" onclick="toggleAnswer('answer2', 'icon2')">
+                <div class="question">
+                  <h3>JavaScript History</h3>
+                  <div class="icon" id="icon2">
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+                <div class="answer-container">
+                  <div class="answer history">
+                    <p>
+                      JavaScript ka itihas bahut hi mahatvapurna hai aur iska vikas web development mein ek turning
+                      point
+                      tha. Yahan, JavaScript ke itihas ki kuch mukhya ghatnayein hain:
+                    </p>
 
-                  </li>
-                  <li>
-                    <span>Jest</span> :- <br>
-                    Facebook ne develop kiya hai, Jest ek JavaScript testing framework hai jo React projects ke liye bhi bahut upayogi hai.
-                  </li>
-                </ul>
-                <h3>7. UI Frameworks/Libraries :-</h3>
-                <ul>
-                  <li>
-                    <span>React.Js / Next.Js</span> :- <br>
-                    Facebook ne develop kiya hai, React ek declarative, efficient, aur flexible JavaScript library hai jo user interfaces banane mein madad karta hai.
-                  </li>
-                  <li>
-                    <span>Angular</span> :- <br>
-                    Google ke dwara develop kiya gaya Angular ek open-source web application framework hai jo dynamic, single-page applications banane mein upayogi hai.
-                  </li>
-                  <li>
-                    <span>Vue.js</span> :- <br>
-                    Yeh ek progressive JavaScript framework hai jo UI development mein use hota hai.
-                  </li>
-                </ul>
-                <h3>8. Debugging Tools :-</h3>
-                <ul>
-                  <li>
-                    <span>Chrome Developer Tools</span> :- <br>
-                    Web browsers, jaise ki Google Chrome, ke developer tools debugging ke liye upayogi hote hain. Yeh real-time code inspection, profiling, aur debugging ka support karte hain.
-                  </li>
-                  
-                </ul>
+                    <ul>
+                      <li>
+                        <h5>1995</h5>
+                        <p>
+                          <span class="h-author1">Netscape Navigator :-</span>
+                          JavaScript ka janm 1995 mein hua tha, jab Netscape Navigator browser ke liye ek naya scripting
+                          language talaash raha tha. Brendan Eich ne is bhasha ka vikas kiya, aur isse Mocha ke naam se
+                          jana
+                          jaata tha.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>1995</h5>
+                        <p>
+                          <span class="h-author">LiveScript se JavaScript :-</span>
+                          Jab Netscape ne is bhasha ko apne browser mein shamil kiya, to usne iska naam "LiveScript"
+                          rakha.
+                          Fir, Sun Microsystems ke saath ek alliance ke chalte, iska naam "JavaScript" mein badal diya
+                          gaya.
+                          Isme Java se kuch inspiration thi, lekin yeh Java se koi bhi direct connection nahi rakhta
+                          hai.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>1996</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript Standardization :-</span>
+                          JavaScript ke popularity ke saath-saath, iska standardization ka demand badha. Iske liye
+                          European
+                          Computer Manufacturers Association (ECMA) ne ek committee banaayi, jiska uddeshya JavaScript
+                          ko ek
+                          standardized scripting language banane ka tha. Is standardization process ke baad, is bhasha
+                          ko
+                          "ECMAScript" kaha gaya.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>1997</h5>
+                        <p>
+                          <span class="h-author">ECMAScript 2nd Edition :-</span>
+                          Pahli official ECMAScript standard, ECMAScript 1, release hui thi 1997 mein. Jald hi iske
+                          baad,
+                          ECMAScript 2nd Edition aayi, jise ECMA-262 standard ke roop mein jaana jaata hai.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2000</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript 3rd Edition :-</span>
+                          1999 mein, ECMAScript 3rd Edition release hui, jisme kuch naye features shaamil kiye gaye. Yeh
+                          version kaafi lamba samay tak istemaal hua aur aaj bhi kuch jagahon par legacy code ke roop
+                          mein
+                          dekha ja sakta hai.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2005</h5>
+                        <p>
+                          <span class="h-author">AJAX :-</span>
+                          2005 mein, Jesse James Garrett ne AJAX (Asynchronous JavaScript and XML) term coin kiya. AJAX
+                          ka
+                          istemaal karke web pages ko bina puri tarah reload kiye, dynamic taur par update kiya ja sakta
+                          tha. Yeh ek important milestone tha JavaScript ke evolution mein.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2009</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript 5th Edition :-</span>
+                          ECMAScript 5th Edition 2009 mein release hui aur ismein modern JavaScript development ke liye
+                          kai
+                          improvements shaamil the.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2015</h5>
+                        <p>
+                          <span class="h-author">ECMAScript 6 (ES6) ya ECMAScript 2015 :-</span>
+                          Is version ne JavaScript ko kai naye features aur enhancements diye, jaise ki arrow functions,
+                          classes, let aur const keywords, template literals, aur modules. Is version ke baad, har saal
+                          naye
+                          ECMAScript versions aane lage.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2020</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript 2020 (ES11) :-</span>
+                          Har saal ki tarah, ECMAScript ke naye version aaye hain, jinmein JavaScript ko aur bhi
+                          powerful
+                          banane wale features shaamil hote hain.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <p>
+                      JavaScript ka itihas aaj bhi tezi se badal raha hai, aur ise continuously update kiya ja raha hai
+                      taki
+                      yeh developers ko latest tools aur capabilities provide kar sake. Iske istemaal ke karan,
+                      JavaScript
+                      web development ka ek moolya aur pramukh bhasha ban gaya hai.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-container" id="answer3" onclick="toggleAnswer('answer3', 'icon3')">
+                <div class="question">
+                  <h3>Learn Tools in JavaScript</h3>
+                  <div class="icon" id="icon3">
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+                <div class="answer-container">
+                  <div class="answer">
+                    <h3>1. Text Editors/IDEs :-</h3>
+                    <ul>
+                      <li>
+                        <span>Visual Studio Code (VSCode)</span> :- <br>
+                        Yeh ek mukt, lightweight, aur highly customizable source code editor hai jo bahut saare
+                        programming
+                        languages, including JavaScript, ke liye upayukt hai.
+                      </li>
+                      <li>
+                        <span>Sublime Text</span> :- <br>
+                        Ek aur popular text editor hai jo syntax highlighting, auto-completion, aur versatile plugins ke
+                        liye prasiddh hai.
+                      </li>
+                      <li>
+                        <span>Atom</span> :- <br>
+                        GitHub ne develop kiya hai aur yeh bhi ek mukt aur customizable text editor hai.
+                      </li>
+                    </ul>
+                    <h3>2. Version Control Systems :-</h3>
+                    <ul>
+                      <li>
+                        <span>Git</span> :- <br>
+                        Version control ke liye Git ka widespread istemaal hota hai. Developers apne code ko track karne
+                        aur collaboration ke liye Git ka upayog karte hain.
+                      </li>
+
+                    </ul>
+                    <h3>3. Package Managers :-</h3>
+                    <ul>
+                      <li>
+                        <span>npm (Node Package Manager)</span> :- <br>
+                        JavaScript packages ko manage karne ke liye npm ka istemaal hota hai. Ye Node.js ke saath
+                        pre-installed aata hai aur open source packages ko download aur install karne mein madad karta
+                        hai.
+                      </li>
+                      <li>
+                        <span>Yarn</span> :- <br>
+                        Yeh bhi ek package manager hai jo npm ke alternatives mein se ek hai. Yarn npm ki tarah hi kaam
+                        karta hai, lekin kuch advanced features aur speed optimizations ke saath aata hai.
+                      </li>
+
+                    </ul>
+                    <h3>4. Build Tools :-</h3>
+                    <ul>
+                      <li>
+                        <span>Webpack</span> :- <br>
+                        Ye ek module bundler hai jo multiple JavaScript files ko ek hi file mein combine karta hai,
+                        jisse performance improve hoti hai.
+                      </li>
+                      <li>
+                        <span>Babel</span> :- <br>
+                        Modern JavaScript (ES6, ES7, etc.) ko older versions mein convert karne ke liye Babel ka
+                        istemaal hota hai, taki code sabhi browsers mein chal sake.
+                      </li>
+
+                    </ul>
+                    <h3>5. Task Runners :-</h3>
+                    <ul>
+                      <li>
+                        <span>Grunt</span> :- <br>
+                        Yeh ek JavaScript task runner hai jo repetitive tasks ko automate karne mein madad karta hai.
+                      </li>
+                      <li>
+                        <span>Gulp</span> :- <br>
+                        Gulp bhi ek task runner hai jo code ko optimize karne aur build process ko streamline karne mein
+                        upayukt hai.
+                      </li>
+
+                    </ul>
+                    <h3>6. Testing Frameworks :-</h3>
+                    <ul>
+                      <li>
+                        <span>Jasmine</span> :- <br>
+                        Yeh ek behavior-driven development framework hai jiska istemaal testing ke liye hota hai.
+                      </li>
+                      <li>
+                        <span>Mocha</span> :- <br>
+                        Mocha ek flexible aur feature-rich testing framework hai jo asynchrony ko support karta hai.
+
+                      </li>
+                      <li>
+                        <span>Jest</span> :- <br>
+                        Facebook ne develop kiya hai, Jest ek JavaScript testing framework hai jo React projects ke liye
+                        bhi bahut upayogi hai.
+                      </li>
+                    </ul>
+                    <h3>7. UI Frameworks/Libraries :-</h3>
+                    <ul>
+                      <li>
+                        <span>React.Js / Next.Js</span> :- <br>
+                        Facebook ne develop kiya hai, React ek declarative, efficient, aur flexible JavaScript library
+                        hai jo user interfaces banane mein madad karta hai.
+                      </li>
+                      <li>
+                        <span>Angular</span> :- <br>
+                        Google ke dwara develop kiya gaya Angular ek open-source web application framework hai jo
+                        dynamic, single-page applications banane mein upayogi hai.
+                      </li>
+                      <li>
+                        <span>Vue.js</span> :- <br>
+                        Yeh ek progressive JavaScript framework hai jo UI development mein use hota hai.
+                      </li>
+                    </ul>
+                    <h3>8. Debugging Tools :-</h3>
+                    <ul>
+                      <li>
+                        <span>Chrome Developer Tools</span> :- <br>
+                        Web browsers, jaise ki Google Chrome, ke developer tools debugging ke liye upayogi hote hain.
+                        Yeh real-time code inspection, profiling, aur debugging ka support karte hain.
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
               </div>
               <!-- Blogs Text example Explained area end -->
             </div>
@@ -692,6 +675,7 @@
 
   <!-- Custom Javascript File Link Area -->
 
+  
   <script src="js/text_container.js"></script>
   <script src="js/html_basics.js"></script>
   <script src="js/js_tutorial.js"></script>
