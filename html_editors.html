@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror/lib/codemirror.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/monokai.min.css"
-    integrity="sha512-R6PH4vSzF2Yxjdvb2p2FA06yWul+U0PDDav4b/od/oXf9Iw37zl10plvwOXelrjV2Ai7Eo3vyHeyFUjhXdBCVQ=="
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/monokai.min.css" i
+    ntegrity="sha512-R6PH4vSzF2Yxjdvb2p2FA06yWul+U0PDDav4b/od/oXf9Iw37zl10plvwOXelrjV2Ai7Eo3vyHeyFUjhXdBCVQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror/lib/codemirror.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="preload" href="/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin="" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
   <link rel="stylesheet" href="css/style.css" />
@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="css/blogs.css">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/code_area.css">
+  <link rel="stylesheet" href="css/sidebar-toggle.css">
+  <link rel="stylesheet" href="css/text-container.css">
   <title>W3School Pro: Home Page</title>
 </head>
 
@@ -34,9 +36,12 @@
   <main>
     <!--#####################********* this is header section area **********###################-->
     <header>
+      
       <nav class="main-menu">
         <!--#####################********* this is main menu area **********###################-->
-
+        <div class="toggle-btn" id="toggle-btn2">
+          <i class="ri-arrow-up-s-line"></i>
+        </div>
         <div class="left-menu">
           <!--#####################********* this is main menu left area start**********###################-->
           <div class="logo">
@@ -92,6 +97,7 @@
 
       <div id="subtopnav" onmousedown="startscrolling_subtopnav(event)" onmousemove="scrolling_subtopnav(event)"
         onmouseup="endscrolling_subtopnav(event)" onclick="return pellessii(event)">
+        
         <div id="scroll_left_btn">
           <span onmousedown="scrollmenow(-1)" onmouseup="stopscrollmenow()"
             onmouseout="stopscrollmenow()">&nbsp;&nbsp;❮&nbsp;&nbsp;</span>
@@ -152,7 +158,11 @@
     </header>
 
     <section>
-      <aside class="w3-sidebar w3-collapse" id="sidenav">
+      
+      <aside class="sidebar w3-collapse" id="sidenav">
+        <div class="toggle-btn" id="toggle-btn1">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
 
         <div id="leftmenuinner">
           <div id="leftmenuinnerinner">
@@ -289,7 +299,7 @@
             <!-- Blogs Banner area start -->
             <div class="banner-area">
               <div class="banner">
-                <h1>HTML Editors</h1>
+                <h1>Welcome to JavaScript Tutorial</h1>
                 <p>Explore the world of HTML, CSS, and JavaScript</p>
                 <a href="#" class="cta-button">Get Started</a>
               </div>
@@ -301,99 +311,341 @@
 
               <!-- Blogs Text title area  start -->
               <div class="title">
-                <h1>HTML Editors</h1>
+                <h1>Sidebar Toggle</h1>
               </div>
               <!-- Blogs Text title area  end -->
 
               <!-- Blogs Text description area  start -->
-              <div class="text-container">
-                <p>A simple text editor is all you need to learn HTML.</p>
-                <h2>Learn HTML Using Notepad or TextEdit</h2>
-                <ul>
-                  <li>Web pages can be created and modified by using professional HTML editors.</li>
-                  <li>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).</li>
-                  <li>We believe that using a simple text editor is a good way to learn HTML.</li>
-                  <li>Follow the steps below to create your first web page with Notepad or TextEdit.</li>
-                </ul>
-              </div>
-
-              <div class="text-container">
-                
-                <h2>Step 1: Open Notepad (PC)</h2>
-                <ul>
-                  <li>Windows 8 or later:</li>
-                  <li>Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad..</li>
-                  <li>Windows 7 or earlier:</li>
-                  <li>Open Start > Programs > Accessories > Notepad</li>
-                </ul>
-              </div>
-
-              <div class="text-container">
-                
-                <h2>Step 1: Open TextEdit (Mac)</h2>
-                <ul>
-                  <li>Open Finder > Applications > TextEdit</li>
-                  <li>Also change some preferences to get the application to save files correctly. In Preferences > Format > choose "Plain Text".</li>
-                  <li>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".</li>
-                  <li>Then open a new document to place the code.</li>
-                </ul>
-              </div>
-              <!-- Blogs Text description area  end -->
-
-              <!-- Blogs Text example area  start -->
-              <div class="text-container">
-                <h2>Step 2: Write Some HTML</h2>
-                <p>Write or copy the following HTML code into Notepad:</p>
-                <div class="code-area">
-                  <div class="heading">
-                    <h5>Document Syntax Example</h5>
-                    <button id="copyDocSyntax" class="copy-button"><i class="ri-clipboard-line"></i> Copy Code</button>
+              <div class="text-container" id="answer1" onclick="toggleAnswer('answer1', 'icon1')">
+                <div class="question">
+                  <h3>What is JavaScript</h3>
+                  <div class="icon" id="icon1">
+                    <i class="ri-arrow-down-s-line"></i>
                   </div>
-                  <div id="docSyntax" class="CodeMirror"></div>
                 </div>
-                <img src="https://www.w3schools.com/html/img_notepad.png" alt="">
-              </div>
-              <!-- Blogs Text example area  end -->
+                <div class="answer-container">
+                  <div class="answer">
+                    <p>
+                      JavaScript ek programming language hai jo primarily web development ke liye banayi gayi hai.
+                      Iska upayog aksar web browsers mein client-side scripting ke roop mein hota hai,
+                      jisse websites ko dynamic aur interactive banaya ja sakta hai.
+                      Yeh HTML aur CSS ke saath milke web pages ko zyada vibrant aur user-friendly banaane mein madad
+                      karta
+                      hai.
+                    </p>
 
-              <!-- Blogs Text example Explained area start -->
-              <div class="text-container">
-                <h2>Example Explained</h2>
-                <ul>
-                  <li>The <span>&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document
-                  </li>
-                  <li>The <span>&lt;html&gt;</span> element is the root element of an HTML page</li>
-                  <li>The <span>&lt;head&gt;</span> element contains meta information about the HTML page</li>
-                  <li>The <span>&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the
-                    browser's title bar or in the page's tab)</li>
-                  <li>The <span>&lt;body&gt;</span> element defines the document's body, and is a container for all the
-                    visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
-                  <li>The <span>&lt;h1&gt;</span> element defines a large heading</li>
-                  <li>The <span>&lt;p1&gt;</span> element defines a paragraph</li>
-                </ul>
-              </div>
-              <!-- Blogs Text HTML History area end -->
+                    <ol>
+                      <li>
+                        <h3>1. Client-Side Scripting :-</h3>
+                        JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
+                        Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
+                        jisse webpage ko dynamically modify kiya ja sake.
+                      </li>
+                      <li>
+                        <h3>2. Cross-Platform Compatibility :-</h3>
+                        JavaScript sabhi major web browsers mein kaam karta hai, jisse yeh ek cross-platform language
+                        hai.
+                        Iska matlab hai ki likha gaya code alag-alag browsers aur operating systems par bina kisi
+                        samasya ke
+                        kaam karega.
+                      </li>
+                      <li>
+                        <h3>3. Object-Oriented :-</h3>
+                        JavaScript object-oriented programming (OOP) ka support karta hai, jiske karan code ko modular
+                        banaya ja sakta hai. Isme objects ka istemaal kiya ja sakta hai jo data aur functionality ko ek
+                        saath laaye.
+                      </li>
+                      <li>
+                        <h3>4. Asynchronous Programming :-</h3>
+                        JavaScript asynchronous programming ko bhi support karta hai, jo kisi task ko chhod kar dusre
+                        tasks
+                        ko continue karne mein madad karta hai. Iske liye callbacks, promises, aur async/await ka
+                        istemaal
+                        hota hai.
+                      </li>
+                      <li>
+                        <h3>5. Dynamic Typing :-</h3>
+                        JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
+                        Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
+                        jisse webpage ko dynamically modify kiya ja sake.
+                      </li>
+                      <li>
+                        <h3>6. Event-Driven Programming :-</h3>
+                        JavaScript ka mukhya istemaal client-side scripting ke liye hota hai.
+                        Yani ki, yeh user ke browser mein chalta hai aur wahaan par events ko handle karta hai,
+                        jisse webpage ko dynamically modify kiya ja sake.
+                      </li>
+                      <li>
+                        <h2>Basic JavaScript Syntax</h2>
+                        <div class="code-area">
+                          <div class="heading">
+                            <h5>Document Syntax Example</h5>
+                            <button id="copyJsSyntax" class="copy-button"><i class="ri-clipboard-line"></i> Copy
+                              Code</button>
+                          </div>
+                          <div id="jsSyntax" class="CodeMirror"></div>
+                        </div>
+                      </li>
 
-              <!-- Blogs Text HTML History area start -->
-              <div class="text-container">
-                <h2>Step 3: Save the HTML Page</h2>
-                <ul>
-                  <li>Save the file on your computer. Select File > Save as in the Notepad menu.</li>
-                  <li>Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</li>
-                </ul>
-                <img src="https://www.w3schools.com/html/img_saveas.png" alt="">
-                <p>Tip: You can use either .htm or .html as file extension. There is no difference; it is up to you.</p>
+                    </ol>
+
+                    <p>
+                      Yeh sirf ek chhota introduction hai, aur JavaScript mein aur bhi advanced concepts hote hain jaise
+                      closures, prototypes, aur modern features jo ECMAScript standards ke saath aaye hain. JavaScript
+                      ka
+                      istemaal web development ke alawa bhi kai aur jagahon par hota hai, jisse yeh ek versatile aur
+                      prabhaavit programming language banata hai.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-container" id="answer2" onclick="toggleAnswer('answer2', 'icon2')">
+                <div class="question">
+                  <h3>JavaScript History</h3>
+                  <div class="icon" id="icon2">
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+                <div class="answer-container">
+                  <div class="answer history">
+                    <p>
+                      JavaScript ka itihas bahut hi mahatvapurna hai aur iska vikas web development mein ek turning
+                      point
+                      tha. Yahan, JavaScript ke itihas ki kuch mukhya ghatnayein hain:
+                    </p>
+
+                    <ul>
+                      <li>
+                        <h5>1995</h5>
+                        <p>
+                          <span class="h-author1">Netscape Navigator :-</span>
+                          JavaScript ka janm 1995 mein hua tha, jab Netscape Navigator browser ke liye ek naya scripting
+                          language talaash raha tha. Brendan Eich ne is bhasha ka vikas kiya, aur isse Mocha ke naam se
+                          jana
+                          jaata tha.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>1995</h5>
+                        <p>
+                          <span class="h-author">LiveScript se JavaScript :-</span>
+                          Jab Netscape ne is bhasha ko apne browser mein shamil kiya, to usne iska naam "LiveScript"
+                          rakha.
+                          Fir, Sun Microsystems ke saath ek alliance ke chalte, iska naam "JavaScript" mein badal diya
+                          gaya.
+                          Isme Java se kuch inspiration thi, lekin yeh Java se koi bhi direct connection nahi rakhta
+                          hai.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>1996</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript Standardization :-</span>
+                          JavaScript ke popularity ke saath-saath, iska standardization ka demand badha. Iske liye
+                          European
+                          Computer Manufacturers Association (ECMA) ne ek committee banaayi, jiska uddeshya JavaScript
+                          ko ek
+                          standardized scripting language banane ka tha. Is standardization process ke baad, is bhasha
+                          ko
+                          "ECMAScript" kaha gaya.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>1997</h5>
+                        <p>
+                          <span class="h-author">ECMAScript 2nd Edition :-</span>
+                          Pahli official ECMAScript standard, ECMAScript 1, release hui thi 1997 mein. Jald hi iske
+                          baad,
+                          ECMAScript 2nd Edition aayi, jise ECMA-262 standard ke roop mein jaana jaata hai.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2000</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript 3rd Edition :-</span>
+                          1999 mein, ECMAScript 3rd Edition release hui, jisme kuch naye features shaamil kiye gaye. Yeh
+                          version kaafi lamba samay tak istemaal hua aur aaj bhi kuch jagahon par legacy code ke roop
+                          mein
+                          dekha ja sakta hai.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2005</h5>
+                        <p>
+                          <span class="h-author">AJAX :-</span>
+                          2005 mein, Jesse James Garrett ne AJAX (Asynchronous JavaScript and XML) term coin kiya. AJAX
+                          ka
+                          istemaal karke web pages ko bina puri tarah reload kiye, dynamic taur par update kiya ja sakta
+                          tha. Yeh ek important milestone tha JavaScript ke evolution mein.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2009</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript 5th Edition :-</span>
+                          ECMAScript 5th Edition 2009 mein release hui aur ismein modern JavaScript development ke liye
+                          kai
+                          improvements shaamil the.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2015</h5>
+                        <p>
+                          <span class="h-author">ECMAScript 6 (ES6) ya ECMAScript 2015 :-</span>
+                          Is version ne JavaScript ko kai naye features aur enhancements diye, jaise ki arrow functions,
+                          classes, let aur const keywords, template literals, aur modules. Is version ke baad, har saal
+                          naye
+                          ECMAScript versions aane lage.
+                        </p>
+                      </li>
+                      <li>
+                        <h5>2020</h5>
+                        <p>
+                          <span class="h-author1">ECMAScript 2020 (ES11) :-</span>
+                          Har saal ki tarah, ECMAScript ke naye version aaye hain, jinmein JavaScript ko aur bhi
+                          powerful
+                          banane wale features shaamil hote hain.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <p>
+                      JavaScript ka itihas aaj bhi tezi se badal raha hai, aur ise continuously update kiya ja raha hai
+                      taki
+                      yeh developers ko latest tools aur capabilities provide kar sake. Iske istemaal ke karan,
+                      JavaScript
+                      web development ka ek moolya aur pramukh bhasha ban gaya hai.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-container" id="answer3" onclick="toggleAnswer('answer3', 'icon3')">
+                <div class="question">
+                  <h3>Learn Tools in JavaScript</h3>
+                  <div class="icon" id="icon3">
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+                <div class="answer-container">
+                  <div class="answer">
+                    <h3>1. Text Editors/IDEs :-</h3>
+                    <ul>
+                      <li>
+                        <span>Visual Studio Code (VSCode)</span> :- <br>
+                        Yeh ek mukt, lightweight, aur highly customizable source code editor hai jo bahut saare
+                        programming
+                        languages, including JavaScript, ke liye upayukt hai.
+                      </li>
+                      <li>
+                        <span>Sublime Text</span> :- <br>
+                        Ek aur popular text editor hai jo syntax highlighting, auto-completion, aur versatile plugins ke
+                        liye prasiddh hai.
+                      </li>
+                      <li>
+                        <span>Atom</span> :- <br>
+                        GitHub ne develop kiya hai aur yeh bhi ek mukt aur customizable text editor hai.
+                      </li>
+                    </ul>
+                    <h3>2. Version Control Systems :-</h3>
+                    <ul>
+                      <li>
+                        <span>Git</span> :- <br>
+                        Version control ke liye Git ka widespread istemaal hota hai. Developers apne code ko track karne
+                        aur collaboration ke liye Git ka upayog karte hain.
+                      </li>
+
+                    </ul>
+                    <h3>3. Package Managers :-</h3>
+                    <ul>
+                      <li>
+                        <span>npm (Node Package Manager)</span> :- <br>
+                        JavaScript packages ko manage karne ke liye npm ka istemaal hota hai. Ye Node.js ke saath
+                        pre-installed aata hai aur open source packages ko download aur install karne mein madad karta
+                        hai.
+                      </li>
+                      <li>
+                        <span>Yarn</span> :- <br>
+                        Yeh bhi ek package manager hai jo npm ke alternatives mein se ek hai. Yarn npm ki tarah hi kaam
+                        karta hai, lekin kuch advanced features aur speed optimizations ke saath aata hai.
+                      </li>
+
+                    </ul>
+                    <h3>4. Build Tools :-</h3>
+                    <ul>
+                      <li>
+                        <span>Webpack</span> :- <br>
+                        Ye ek module bundler hai jo multiple JavaScript files ko ek hi file mein combine karta hai,
+                        jisse performance improve hoti hai.
+                      </li>
+                      <li>
+                        <span>Babel</span> :- <br>
+                        Modern JavaScript (ES6, ES7, etc.) ko older versions mein convert karne ke liye Babel ka
+                        istemaal hota hai, taki code sabhi browsers mein chal sake.
+                      </li>
+
+                    </ul>
+                    <h3>5. Task Runners :-</h3>
+                    <ul>
+                      <li>
+                        <span>Grunt</span> :- <br>
+                        Yeh ek JavaScript task runner hai jo repetitive tasks ko automate karne mein madad karta hai.
+                      </li>
+                      <li>
+                        <span>Gulp</span> :- <br>
+                        Gulp bhi ek task runner hai jo code ko optimize karne aur build process ko streamline karne mein
+                        upayukt hai.
+                      </li>
+
+                    </ul>
+                    <h3>6. Testing Frameworks :-</h3>
+                    <ul>
+                      <li>
+                        <span>Jasmine</span> :- <br>
+                        Yeh ek behavior-driven development framework hai jiska istemaal testing ke liye hota hai.
+                      </li>
+                      <li>
+                        <span>Mocha</span> :- <br>
+                        Mocha ek flexible aur feature-rich testing framework hai jo asynchrony ko support karta hai.
+
+                      </li>
+                      <li>
+                        <span>Jest</span> :- <br>
+                        Facebook ne develop kiya hai, Jest ek JavaScript testing framework hai jo React projects ke liye
+                        bhi bahut upayogi hai.
+                      </li>
+                    </ul>
+                    <h3>7. UI Frameworks/Libraries :-</h3>
+                    <ul>
+                      <li>
+                        <span>React.Js / Next.Js</span> :- <br>
+                        Facebook ne develop kiya hai, React ek declarative, efficient, aur flexible JavaScript library
+                        hai jo user interfaces banane mein madad karta hai.
+                      </li>
+                      <li>
+                        <span>Angular</span> :- <br>
+                        Google ke dwara develop kiya gaya Angular ek open-source web application framework hai jo
+                        dynamic, single-page applications banane mein upayogi hai.
+                      </li>
+                      <li>
+                        <span>Vue.js</span> :- <br>
+                        Yeh ek progressive JavaScript framework hai jo UI development mein use hota hai.
+                      </li>
+                    </ul>
+                    <h3>8. Debugging Tools :-</h3>
+                    <ul>
+                      <li>
+                        <span>Chrome Developer Tools</span> :- <br>
+                        Web browsers, jaise ki Google Chrome, ke developer tools debugging ke liye upayogi hote hain.
+                        Yeh real-time code inspection, profiling, aur debugging ka support karte hain.
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
               </div>
               <!-- Blogs Text example Explained area end -->
-
-              <div class="text-container">
-                <h2>Step 4: View the HTML Page in Your Browser:</h2>
-                <ul>
-                  <li>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</li>
-                  <li>The result will look much like this:.</li>
-                </ul>
-                <img src="https://www.w3schools.com/html/img_chrome.png" alt="">
-                
-              </div>
             </div>
             <!-- Blogs Text area start -->
           </div>
@@ -406,122 +658,123 @@
           <!-- Advertizment area end -->
         </div>
         <!-- Blogs area end -->
+        <!--   Footer Section Area start -->
+        <footer>
+          <div class="ft-menu">
+            <!--#####################********* this is main menu area **********###################-->
+
+            <div class="left-menu">
+              <!--#####################********* this is main menu left area start**********###################-->
+              <div class="logo">
+                <a href="#">
+                  <h1>Skills Hub</h1>
+                  <h6>Technology</h6>
+                </a>
+              </div>
+
+              <div class="left-menu-item">
+                <a href="#">
+                  <h3>SPACES</h3>
+                </a>
+                <a href="#">
+                  <h3>UPGRADE</h3>
+                </a>
+                <a href="#">
+                  <h3>NEWSLETTER</h3>
+                </a>
+                <a href="#">
+                  <h3>GET CERTIFIED</h3>
+                </a>
+                <a href="#">
+                  <h3>REPORT ERROR</h3>
+                </a>
+              </div>
+            </div>
+            <!--#####################********* this is main menu left area end**********###################-->
+
+          </div>
+
+          <div class="ft-links">
+
+            <div class="link-card">
+              <h3>Top Tutorials</h3>
+              <ul>
+                <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
+                <li><a href="#"><button id="certificate">JavaScript</button></a></li>
+                <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
+              </ul>
+            </div>
+            <div class="link-card">
+              <h3>Top References</h3>
+              <ul>
+                <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
+                <li><a href="#"><button id="certificate">JavaScript</button></a></li>
+                <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
+              </ul>
+            </div>
+            <div class="link-card">
+              <h3>Top Examples</h3>
+              <ul>
+                <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
+                <li><a href="#"><button id="certificate">JavaScript</button></a></li>
+                <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
+              </ul>
+            </div>
+            <div class="link-card">
+              <h3>Get Certified</h3>
+              <ul>
+                <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
+                <li><a href="#"><button id="certificate">JavaScript</button></a></li>
+                <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
+                <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer Section Area end -->
       </article>
-      <!--   Footer Section Area start -->
-      <footer>
-        <div class="ft-menu">
-          <!--#####################********* this is main menu area **********###################-->
 
-          <div class="left-menu">
-            <!--#####################********* this is main menu left area start**********###################-->
-            <div class="logo">
-              <a href="#">
-                <h1>Skills Hub</h1>
-                <h6>Technology</h6>
-              </a>
-            </div>
-
-            <div class="left-menu-item">
-              <a href="#">
-                <h3>SPACES</h3>
-              </a>
-              <a href="#">
-                <h3>UPGRADE</h3>
-              </a>
-              <a href="#">
-                <h3>NEWSLETTER</h3>
-              </a>
-              <a href="#">
-                <h3>GET CERTIFIED</h3>
-              </a>
-              <a href="#">
-                <h3>REPORT ERROR</h3>
-              </a>
-            </div>
-          </div>
-          <!--#####################********* this is main menu left area end**********###################-->
-
-        </div>
-
-        <div class="ft-links">
-
-          <div class="link-card">
-            <h3>Top Tutorials</h3>
-            <ul>
-              <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
-              <li><a href="#"><button id="certificate">JavaScript</button></a></li>
-              <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
-            </ul>
-          </div>
-          <div class="link-card">
-            <h3>Top References</h3>
-            <ul>
-              <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
-              <li><a href="#"><button id="certificate">JavaScript</button></a></li>
-              <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
-            </ul>
-          </div>
-          <div class="link-card">
-            <h3>Top Examples</h3>
-            <ul>
-              <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
-              <li><a href="#"><button id="certificate">JavaScript</button></a></li>
-              <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
-            </ul>
-          </div>
-          <div class="link-card">
-            <h3>Get Certified</h3>
-            <ul>
-              <li><a href="#"><button id="certificate">HTML Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">CSS Tutorial </button></a></li>
-              <li><a href="#"><button id="certificate">JavaScript</button></a></li>
-              <li><a href="#"><button id="certificate">How To Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">SQL Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Python Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Bootstrap Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">Java Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">C++ Tutorial</button></a></li>
-              <li><a href="#"><button id="certificate">jQuery Tutorial</button></a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-      <!-- Footer Section Area end -->
     </section>
-
-
   </main>
 
-
   <!--#########********* this is js links section area start **********############-->
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/codemirror/lib/codemirror.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/codemirror/mode/xml/xml.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/codemirror/mode/javascript/javascript.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
 
   <!-- Custom Javascript File Link Area -->
+  <script src="js/text_container.js"></script>
+  <script src="js/sidebar-toggle.js"></script>
   <script src="js/html_basics.js"></script>
   <script src="js/submenu.js"></script>
 

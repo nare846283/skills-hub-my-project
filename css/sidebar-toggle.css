@@ -1,9 +1,9 @@
-main {
+main{
     width: 100%;
     min-height: 100vh;
 }
 
-section {
+section{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -15,8 +15,8 @@ section {
 
 @media (min-width: 993px) {
     .w3-sidebar.w3-collapse {
-        display: block !important;
-    }
+        display: block!important;
+    }  
 }
 
 /* @media (max-width: 600px) {
@@ -33,13 +33,13 @@ section {
     top: 160px;
     transform: translateX(-92%);
     position: absolute;
-    position: fixed !important;
+    position: fixed!important;
     z-index: 1;
     /* overflow: auto; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.toggle-btn {
+.toggle-btn{
     border: 5px solid #fff;
     cursor: pointer;
     display: flex;
@@ -53,13 +53,13 @@ section {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.sidebar>.toggle-btn {
+.sidebar > .toggle-btn{
     top: 10px;
     left: 94%;
     z-index: 9;
 }
 
-.sidebar>.toggle-btn i {
+.sidebar > .toggle-btn i{
     color: #fff;
     font-size: 18px;
     transform: rotate(180deg);
@@ -67,19 +67,16 @@ section {
 }
 
 @keyframes popIcon1 {
-    0% {
+    0%{
         transform: translateX(-3px);
     }
-
-    25% {
+    25%{
         transform: translateX(5px);
     }
-
-    50% {
+    50%{
         transform: translateX(10px);
     }
-
-    100% {
+    100%{
         transform: translateX(-3px);
     }
 }
@@ -111,7 +108,7 @@ section {
 }
 
 #leftmenuinnerinner::-webkit-scrollbar {
-    width: 10px;
+   width: 10px;
 }
 
 #sidenav h2 {
@@ -126,13 +123,8 @@ section {
     color: rgb(255, 255, 255);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Segoe UI", Arial, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 400;
     /* margin: 10px 0; */
 }
@@ -145,16 +137,16 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-
+    
 }
 
 #sidenav a.active {
-    background-color: #04AA6D !important;
-    color: #ffffff !important;
+    background-color: #04AA6D!important;
+    color: #ffffff!important;
 }
 
 #sidenav a {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 600;
     text-decoration: none;
     display: block;
@@ -171,13 +163,13 @@ h2 {
 }
 
 #sidenav a:hover {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI",Arial,sans-serif;
     text-decoration: none;
     display: block;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgb(255, 103, 230);
     color: #ffffff;
-    transition: all 1s cubic-bezier(.25, .8, .25, 1);
+    transition: all 1s cubic-bezier(.25,.8,.25,1);
     transform: scale(1.1);
 }
 
@@ -187,15 +179,14 @@ a:-webkit-any-link {
     /* text-decoration: underline; */
 }
 
-.ref_overview,
-.tut_overview {
+.ref_overview, .tut_overview {
     display: none;
     margin-left: 10px;
     background-color: #ddd;
     line-height: 1.8em;
 }
 
-article {
+article{
     margin-top: 180px;
     transition: all ease 1s;
     border-radius: 20px;
@@ -207,10 +198,10 @@ article {
     justify-content: start;
     /* flex-direction: column; */
     gap: 10px;
-
+    
 }
 
-.blog-area {
+.blog-area{
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -219,7 +210,7 @@ article {
     height: auto;
 }
 
-.content {
+.content{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -227,7 +218,7 @@ article {
     height: auto;
 }
 
-.advertizment-area {
+.advertizment-area{
     background-color: #d6ffe0;
     object-fit: cover;
     border-radius: 20px;
@@ -237,7 +228,7 @@ article {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.advertizment-area img {
+.advertizment-area img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -248,7 +239,7 @@ article {
     background-color: #133b0b;
 }
 
-.banner-area {
+.banner-area{
     position: relative;
     background-size: cover;
     background-position: center;
@@ -258,7 +249,7 @@ article {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.banner {
+.banner{
     margin-top: 0px;
     background-color: #242424;
     display: flex;
@@ -285,7 +276,7 @@ article {
     color: rgb(0, 255, 13);
     font-family: sans-serif;
     font-weight: 600;
-
+    
 }
 
 /* Style the call-to-action button */
@@ -302,21 +293,21 @@ article {
     transition: background-color 0.3s ease;
 }
 
-.banner-area .cta-button:hover {
+.banner-area .cta-button:hover{
     background-color: #2980b9;
 }
 
-.text-area {
+.text-area{
     margin-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom:30px ;
     width: 100%;
     height: fit-content;
-
+    
     border-radius: 20px;
-
+    
 }
 
-.title {
+.title{
     padding: 50px 20px;
     border-radius: 20px;
     display: flex;
@@ -330,13 +321,13 @@ article {
     color: rgb(255, 255, 255);
 }
 
-.title h1 {
+.title h1{
     font-size: 3rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
 
-footer {
+footer{
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 50px;
@@ -348,7 +339,7 @@ footer {
 }
 
 
-footer .ft-menu {
+footer .ft-menu{
     padding: 0px 0px;
     font-family: 'Source Sans Pro', sans-serif;
     width: 96%;
@@ -356,13 +347,13 @@ footer .ft-menu {
     background-color: #d6ffe0;
     display: flex;
     color: rgb(0, 0, 0);
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 /* this is main left Menu styling (top)*/
 
-footer .ft-menu .left-menu {
-
+footer .ft-menu .left-menu{
+    
     /* border: 1px solid red; */
     height: 100%;
     display: flex;
@@ -374,7 +365,7 @@ footer .ft-menu .left-menu {
 
 /* this is main left Menu logo styling (top)*/
 
-footer .ft-menu .left-menu .logo {
+footer .ft-menu .left-menu .logo{
     /* border: 1px solid red; */
     /* padding: 30px 25px; */
     display: flex;
@@ -386,16 +377,16 @@ footer .ft-menu .left-menu .logo {
 }
 
 /* this is main left Menu item styling (top) */
-footer .ft-menu .left-menu .left-menu-item a {
+footer .ft-menu .left-menu .left-menu-item a{
     text-decoration: none;
     cursor: pointer;
 }
 
-footer .ft-menu .left-menu .left-menu-item a:hover {
+footer .ft-menu .left-menu .left-menu-item a:hover{
     text-decoration: none;
 }
 
-footer .ft-menu .left-menu .left-menu-item a h3 {
+footer .ft-menu .left-menu .left-menu-item a h3{
     letter-spacing: 1.5px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #000000;
@@ -403,7 +394,7 @@ footer .ft-menu .left-menu .left-menu-item a h3 {
     font-family: 600;
 }
 
-footer .ft-menu .left-menu .left-menu-item {
+footer .ft-menu .left-menu .left-menu-item{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -411,7 +402,7 @@ footer .ft-menu .left-menu .left-menu-item {
     height: 100%;
 }
 
-footer .ft-links {
+footer .ft-links{
     padding-top: 30px;
     width: 90%;
     margin: auto;
@@ -420,35 +411,35 @@ footer .ft-links {
     justify-content: space-between;
 }
 
-footer .ft-links .link-card {
+footer .ft-links .link-card{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-footer .ft-links .link-card h3 {
+footer .ft-links .link-card h3{
     font-size: 21px;
     padding: 6px 30px;
     text-align: center;
     margin: auto;
     border-radius: 6px;
-    width: fit-content;
+    width:fit-content;
     background-color: rgb(255, 3, 3);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     color: rgb(255, 255, 255);
 }
 
-footer .ft-links .link-card ul {
+footer .ft-links .link-card ul{
     margin-top: 20px;
-    margin: 0px auto;
+    margin:0px auto;
 }
 
-footer .ft-links .link-card ul li {
+footer .ft-links .link-card ul li{
     list-style-type: none;
 }
 
-footer .ft-links .link-card ul li a {
-    font-family: "Segoe UI", Arial, sans-serif;
+footer .ft-links .link-card ul li a{
+    font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 600;
     text-decoration: none;
     display: block;
@@ -461,11 +452,12 @@ footer .ft-links .link-card ul li a {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-footer .ft-links .link-card ul li a #certificate {
+footer .ft-links .link-card ul li a #certificate{
     width: 160px;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 600;
     font-size: 16px;
 }
 
 /* footer area end */
+
